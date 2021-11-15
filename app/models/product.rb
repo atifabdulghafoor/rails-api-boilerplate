@@ -11,7 +11,7 @@ class Product < ApplicationRecord
   # == Relationships ========================================================
   belongs_to :category
   # == Validations ==========================================================
-  validates :status, :name, presence: true
+  validates :status, :name, :description, presence: true
   validates :description, length: { maximum: 25 }
 
   # == Scopes ===============================================================

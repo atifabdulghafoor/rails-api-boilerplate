@@ -30,3 +30,4 @@
 .env
 
 /config/credentials/environment.key
+coverage

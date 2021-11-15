@@ -108,4 +108,8 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+  config.before do
+    allow_any_instance_of(ApplicationController).to receive(:verify_api_token)
+  end
 end

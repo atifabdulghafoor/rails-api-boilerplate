@@ -14,7 +14,7 @@ module Api
       end
 
       def filter_params
-        params.permit(:ids, :name, :status, :category)
+        params.permit(:name, :status, :category, ids: [])
       end
 
       def permitted_params
